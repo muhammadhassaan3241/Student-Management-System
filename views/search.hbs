@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Search Student</h1>
+    <main id="main">
+        <form action="/searchStudent">
+            <div class="Credentials">
+                <div><label for="search"><input type="text" placeholder="enter email to search student" name="name" id="email"></label></div>
+           
+            <div class="btn"><button>Search Student</button></div>
+            <div class="home-link"><a href="./">Back to home page</a></div>
+
+            {{#if message1}}
+            <h2>Data Found</h2>
+            {{/if}}
+
+            {{#if message2}}
+            <h2>Data not Found</h2>
+            {{/if}}
+
+        </form>
+    </main>
+</body>
+</html>

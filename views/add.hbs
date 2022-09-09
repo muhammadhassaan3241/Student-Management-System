@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+    <link rel="stylesheet" href="css/add.css">
+</head>
+<body>
+    <h1>Add Student</h1>
+    {{!-- <div class="home-link"><a href="./">Back to home page</a></div> --}}
+    <main id="main">
+        <form action="/addStudent" id="formm">
+            <div class="Credentials">
+                <div><input type="text" placeholder="Student Name" id="name" name="name"></div>
+                <div><input type="text" placeholder="Contact" id="contact" name="contact"></div>
+                <div><input type="email" placeholder="Email" id="email" name="email"></div>
+            </div>
+            <div class="radios">
+                <div><h3>Gender</h3></div>
+                <div><label for="male"><input type="radio" name="gender" id="male" value="male"> Male</label></div>
+                <div><label for="female"><input type="radio" name="gender" id="female" value="female"> Female</label></div>
+            </div>
+            <div><button class="btn" type="submit" form="formm" value="Submit">Add Student</button></div>
+             <div class="home-link"><a href="./">Back to home page</a></div>
+             
+            {{#if message}}
+            <h2>Data Inserted</h2>
+            {{/if}}
+
+            {{#if checkMessage}}
+            <h2>Email or Contact already exist!</h2>
+            {{/if}}
+
+        </form>
+    </main>
+</body>
+</html>

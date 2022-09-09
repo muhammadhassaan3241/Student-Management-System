@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="css/updatesearch.css">
+</head>
+<body>
+    <h1>Search Student</h1>
+    <main id="main">
+        <form action="/updatesearch">
+            <div class="Credentials">
+                <div><label for="search"><input type="email" placeholder="enter email to search student" name="email" id="email"></label></div>
+           
+            <div class="btn"><button type="submit" >Search Student</button></div>
+            <div class="home-link"><a href="./">Back to home page</a></div>
+
+
+             {{#if message2}}
+            <h2>User Not Found</h2>
+            {{/if}}            
+
+        </form>
+    </main>
+   
+            {{#if message1}}
+            <main id="main">
+        <form action="/updateStudent" id="formm">
+        {{#data}}
+            <div class="Credentials">
+                <div><input class="la" type="text" placeholder="Student Name" id="name" name="name" value="{{name}}" required ></div>
+                <div><input class="la" type="text" placeholder="Contact" id="contact" name="contact" value="{{contact}}" required ></div>
+                <div><input class="la" type="email" placeholder="Email" id="email" name="email" value="{{email}}" required ></div>
+            </div>
+            <div class="radios">
+                <div><h3>Gender</h3></div>
+                <div><label for="male"><input type="radio" name="gender" id="male" value="{{gender}}"> Male</label></div>
+                <div><label for="female"><input type="radio" name="gender" id="female" value="{{gender}}"> Female</label></div>
+            </div>
+            <div><button class="btn" type="submit" form="formm" value="Submit">Update Student</button></div>
+        {{/data}}
+        <h2>Data Updated Successfully</h2>
+         </form>
+    </main>
+            {{/if}}
+</body>
+</html>

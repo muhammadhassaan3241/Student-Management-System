@@ -1,0 +1,183 @@
+body{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: black;
+}
+
+body,html{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+body h1{
+    margin: 0;
+    padding: 1%;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aquamarine;   
+}
+
+body h1:hover{
+    color: #fff;  
+    background-color: #000;
+    transition: .5s;
+}
+
+#main{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    margin-bottom:5%;
+}
+
+#main form{
+    margin-left:20%;
+    margin-right:20%;
+    border: 1px solid aquamarine;
+    margin-top: 5%;
+    padding: 3%;
+}
+
+
+form .Credentials input{
+    display: inline-block;
+    padding: 1%;
+    width: 50%;
+    margin-bottom: 2%;
+    border-radius:50px;
+    text-align: left;
+    font-size: large;
+    cursor:pointer;
+    color: white;
+    background-color: black;   
+    opacity: 60%;
+    border-left:none ;
+    border-right: none;
+    border-top:none ;
+    border-bottom: 1px solid aquamarine ;
+
+}
+
+.Credentials input:hover{
+    background-color: black;
+    transition: .5s;
+    border-bottom: 1px solid aquamarine ;
+    color: aquamarine;
+    opacity: 100%;
+    border-left:none ;
+    border-right: none;
+    border-top:none ;
+    border-radius:0px;
+}
+
+#main .radios{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    color:aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.radios h3{
+    padding: 0px 50px;
+    text-align: center;
+}
+
+
+
+h3{
+    padding-right: 20;
+    color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+
+}
+
+
+#main form button{
+    display: inline-block;
+    padding: 1%;
+    width: 30%;
+    margin-bottom: 2%;
+    vertical-align:baseline;
+    justify-content: center;
+    margin-left:1%;
+    border-radius:50px;
+    text-align: center;
+    font-size: 24px;
+    cursor:pointer;
+    background-color: aquamarine;
+    color: #000;
+    font-weight: bold;
+    opacity: 60%;
+}
+
+#main form button:hover{
+    opacity: 100%;
+    transition: 1s;
+}
+
+#main form button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#main .home-link a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#main .home-link a:hover{
+    color: aquamarine;
+    transition: 0.5s;
+}
+
+h2{
+    margin-top: 2%;
+    box-sizing: border-box;
+    border: 1px solid aquamarine;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2%;
+    background-color: aquamarine;
+    opacity: 60%;
+    border-radius:20px;
+}
+
+h2:hover{
+    color: #fff;
+    background: #000;
+    transition: 0.5s;
+    border: none;
+    opacity: 100%;
+}
+
+#main .home-link a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+}
+
+#main .home-link a:hover{
+    color: aquamarine;
+    transition: 0.5s;
+}

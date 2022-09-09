@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View</title>
+    <link rel="stylesheet" href="css/view.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<h1>View Students</h1>
+<main>
+    <div class="form-container">
+        <div class="btn"><a href="/add"><button>Add Student <i class="fa-solid fa-user-plus"></i></button></a></div>
+        <form action="/add_user">
+            <div class="table-data">
+                <table id="table">
+                    <thead id="thead">
+                        <tr>
+                            <th>Name</th>
+                            <th>Contact</th>
+                            <th>Email</th>
+                            <th>Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#data}}
+                            <tr>
+                                <td id={{name}} >{{name}}</td>
+                                <td>{{contact}}</td>
+                                <td>{{email}}</td>
+                                <td>{{gender}}</td>
+                            </tr>
+                        {{/data}}
+                    </tbody>
+                </table>
+                </div>
+                <div><button class="Save" type="submit"><a href="/">Save</a></button></div>
+
+            </div>
+
+        </form>
+</main>
+
+</body>
+<script></script>
+</html>
